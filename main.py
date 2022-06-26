@@ -12,9 +12,10 @@ st.title('Transportni klassifikatsiya qiluvchi model')
 
 #rasmni yuklash
 file = st.file_uploader('Rasm yuklash',type=['png','jpg','jpeg','gif'])
-st.image(file)
+
 #Agar Fayl mavjud bolsa keyin bularni ishlatamiz
 if file:
+    st.image(file)
     #PIL Convert
     img = PILImage.create(file)
 
